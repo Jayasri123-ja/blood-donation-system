@@ -1,0 +1,239 @@
+.emergency-list-container {
+  padding: 1rem 0;
+}
+
+.emergency-list-container h3 {
+  color: #b022f1;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.emergency-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.emergency-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.emergency-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+}
+
+.emergency-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.urgency-badge {
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.blood-requirement {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.blood-type {
+  background: #dc3545;
+  color: white;
+  padding: 0.7rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  min-width: 70px;
+  text-align: center;
+}
+
+.units {
+  color: #666;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.emergency-details {
+  margin-bottom: 2rem;
+}
+
+.detail-section {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.detail-section h4 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.detail-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.label {
+  color: #666;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.value {
+  color: #333;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.value.urgent {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.phone-number {
+  color: #007bff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.phone-number:hover {
+  text-decoration: underline;
+}
+
+.description {
+  color: #666;
+  line-height: 1.6;
+  font-style: italic;
+  margin: 0;
+}
+
+.emergency-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-call, .btn-share, .btn-donate {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-call {
+  background: #28a745;
+  color: white;
+}
+
+.btn-call:hover {
+  background: #218838;
+  transform: translateY(-1px);
+}
+
+.btn-share {
+  background: #17a2b8;
+  color: white;
+}
+
+.btn-share:hover {
+  background: #138496;
+  transform: translateY(-1px);
+}
+
+.btn-donate {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-donate:hover {
+  background: #c82333;
+  transform: translateY(-1px);
+}
+
+.emergency-loading {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.no-emergencies {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+}
+
+.no-emergencies-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.no-emergencies h3 {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .emergency-header {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+  
+  .blood-requirement {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+  
+  .emergency-actions {
+    flex-direction: column;
+  }
+  
+  .btn-call, .btn-share, .btn-donate {
+    width: 100%;
+  }
+  
+  .detail-grid {
+    grid-template-columns: 1fr;
+  }
+}

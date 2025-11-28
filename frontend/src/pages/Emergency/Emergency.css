@@ -1,0 +1,68 @@
+.emergency-page {
+  padding: 1rem 0;
+  min-height: 50vh;
+  background-color: #b7d2ee; /* Changed to light gray background */
+}
+
+.emergency-header {
+  text-align: center;
+  margin-bottom: 0.5rem;   
+}
+
+.emergency-header h1 {
+  color: #dc3545; /* Changed to red color */
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center; 
+}
+
+.emergency-header p {
+  color: #666;
+  font-size: 1.2rem;
+  text-align: center; 
+}
+
+.emergency-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  border: 2px solid #49dc35;
+  background: white;
+  color: #64dc35;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab-button.active {
+  background: #3554dc;
+  color: white;
+}
+
+.tab-button:hover:not(.active) {
+  background: #ffe6e6;
+}
+
+.emergency-content {
+  background: white;
+  border-radius: 15px;
+  padding: 0.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .emergency-tabs {
+    flex-direction: column;
+  }
+  
+  .tab-button {
+    text-align: center;
+  }
+}
