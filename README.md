@@ -95,7 +95,7 @@ blood-donation-system/
 
 ### 1. Clone Repository
 ```bash
-git clone <your-repository-url>
+git clone <https://github.com/Jayasri123-ja/blood-donation-system>
 cd blood-donation-system
 ```
 
